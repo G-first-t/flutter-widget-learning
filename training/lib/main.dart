@@ -92,6 +92,7 @@ void main()=>runApp(MaterialApp(
                   autoPlay:true,
                   enlargeCenterPage: true,
                   aspectRatio: 16/9,
+                  autoPlayCurve: Curves.fastOutSlowIn,
                   enableInfiniteScroll: true,
 
                 ))
