@@ -53,7 +53,23 @@ void main()=>runApp(MaterialApp(
                    style:TextStyle( color:Colors.white)
                   ),
                   
-                  )
+                  ),
+                bottomNavigationBar: BottomNavigationBar( 
+                  currentIndex:0,
+                  backgroundColor:const Color.fromARGB(255, 214, 224, 232),
+                   items: const[
+                    BottomNavigationBarItem( 
+                      label:"Home",
+                      icon:Icon(Icons.home)),
+                    BottomNavigationBarItem( 
+                      label:"search",
+                      icon:Icon(Icons.search)),
+                    BottomNavigationBarItem(
+                      label:"profile",
+                      icon:Icon(Icons.person))
+                   ], onTap: (int indexOfItem){},
+                   ),
+                 
             
             );
     }
